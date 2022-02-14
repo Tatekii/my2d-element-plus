@@ -1,0 +1,10 @@
+@import "./element-plus.css";
+@import "./tailwind.css";
+
+html,
+body,
+#app,
+.el-container,
+.el-menu {
+	height: 100%;
+}
