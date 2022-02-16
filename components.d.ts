@@ -19,14 +19,19 @@ declare module 'vue' {
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
+    ElOption: typeof import('element-plus/es')['ElOption']
+    ElRow: typeof import('element-plus/es')['ElRow']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    ElSelect: typeof import('element-plus/es')['ElSelect']
+    ElSelector: typeof import('element-plus/es')['ElSelector']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconSelector: typeof import('./src/components/IconSelector/index.vue')['default']
     Inde: typeof import('./src/components/myContainer/src/navHeader/inde.vue')['default']
     MyIcon: typeof import('./src/components/myIcon/index.vue')['default']
-    NavHeader: typeof import('./src/components/myContainer/src/navHeader/index.vue')['default']
-    NavSide: typeof import('./src/components/myContainer/src/navSide/index.vue')['default']
-    Src: typeof import('./src/components/IconSelector/src/index.vue')['default']
+    NavHeader: typeof import('./src/components/CustomContainer/src/navHeader/index.vue')['default']
+    NavSide: typeof import('./src/components/CustomContainer/src/navSide/index.vue')['default']
+    Src: typeof import('./src/components/CustomContainer/src/index.vue')['default']
   }
 }
 

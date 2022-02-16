@@ -1,9 +1,9 @@
-import { createApp, h } from 'vue'
+import { createApp} from 'vue'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import router from './router/index'
 import * as Icons from '@element-plus/icons-vue'
-import { formatCamel } from "./utils"
+import { formatCamel } from "@/utils"
 import myUi from './components/index'
 // import myIcon from "./components/myIcon/index.vue"
 // css

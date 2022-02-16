@@ -1,6 +1,5 @@
 // 全局自动注册组件
 import { App } from 'vue'
-import { upperFirst, camelCase } from 'lodash-es'
 
 // interface mapItem {
 //   name: string,
@@ -45,7 +44,7 @@ requireComponent.keys().forEach((fileName: string) => {
     // })
   }
 })
-console.log(map);
+// console.log(map);
 
 export default {
   install(app: App) {

@@ -1,5 +1,6 @@
-@import "./element-plus.css";
 @import "./tailwind.css";
+@import "./element-plus.css";
+/* 注意引用顺序，tailwind先导入所有css后摇树，会与ele的样式冲突，所以放在ele之前 */
 
 html,
 body,

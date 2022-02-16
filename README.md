@@ -4,12 +4,14 @@
 ## Todo
 - [x]全局注册icon
 - [x]自动伸缩宽度collapse
-- [x]自动注册全部组件
-- []dialog组件的v-model visible属性尽量不直接修改
-- []图标组件`component :is`
-- []复制文本功能hooks`input+exec`
-- []三级联动省市区选择 
-- []`app.use`全局注册组件
+> require.context能力由@originjs/vite-plugin-require-context提供
+- [x]批量注册组件，自动`app.use`
+- [x]批量注册路由
+- [x]dialog组件的v-model visible
+- [x]图标组件`component :is`
+- [x]复制文本功能hooks`input+exec`
+- [x]4级联动省市区选择 
+- [x]`app.use`全局注册组件
 - []
 - []
 - []

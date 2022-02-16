@@ -1,26 +1,34 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from "../views/Home.vue"
-import Container from "../components/myContainer/src/index.vue"
-import IconSelector from "../views/iconSelector/index.vue"
+import Container from "../components/CustomContainer/src/index.vue"
+
+// 批量注册route的view
+import viewMap from '../views/index'
 
 
-const routes: RouteRecordRaw[] = [
+const viewRoutes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    component: Home
+  }
+  , ...viewMap.map(item => {
+    return {
+      path: item.name,
+      component: item.comp
+    }
+  })
+]
+
+const mainRoutes: RouteRecordRaw[] = [
   {
     path: '/',
     component: Container,
-    children: [{
-      path: "/",
-      component: Home
-    },
-    {
-      path: 'iconSelect',
-      component: IconSelector
-    }]
+    children: viewRoutes
   }
 ]
 
 const router = createRouter({
-  routes,
+  routes: mainRoutes,
   history: createWebHistory()
 })
 
