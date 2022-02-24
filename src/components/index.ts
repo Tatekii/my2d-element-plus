@@ -17,10 +17,12 @@ const requireComponent = require.context(
 
 requireComponent.keys().forEach((fileName: string) => {
   // console.log(fileName);
-  // 排除自己
-  if (fileName !== './index.ts') {
+  // 排除自己和其他ts文件
+  if (fileName !== './index.ts' && fileName.match(/index.ts$/)) {
     // 获取组件配置
     const installConfig:any = requireComponent(fileName)
+    // console.log(installConfig);
+    
     map.push(installConfig.default || installConfig)
     // console.log(installConfig);
 
@@ -44,12 +46,14 @@ requireComponent.keys().forEach((fileName: string) => {
     // })
   }
 })
-// console.log(map);
+console.log(map);
 
 export default {
   install(app: App) {
     map.forEach(item => {
       // app.component(item.name, item.installFn)
+      // console.log(item);
+      
       app.use(item)
     })
   }

@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import iconSelector from './src/index.vue'
+import iconSelector from './IconSelector.vue'
 
 export default {
   install(app: App) {

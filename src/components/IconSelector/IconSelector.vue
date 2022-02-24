@@ -20,7 +20,6 @@
     </el-scrollbar>
   </el-dialog>
 </template>
-
 <script lang='ts' setup>
 import { ref, watch } from 'vue'
 import * as icons from '@element-plus/icons-vue'

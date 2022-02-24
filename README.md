@@ -12,10 +12,23 @@
 - [x]复制文本功能hooks`input+exec`
 - [x]4级联动省市区选择 
 - [x]`app.use`全局注册组件
-- []
-- []
-- []
-- []
+- [x]`useSlots`
+```javascript
+<template>
+  <div class="my-header" v-if="slots.header"></div>
+</template>
+
+const slots  = useSlots()
+```
+- [x]`$attrs``useAttrs`传属性
+```javascript
+// JSX中
+const $attrs = useAttrs()
+<h1  {...$attrs}></h1>
+```
+- [x]JSX组件
+- [x]动态渲染自定义键名导航
+- []`Element.scrollIntoView()`
 - []
 - []
 - []

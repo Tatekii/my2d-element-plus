@@ -16,7 +16,16 @@ const viewRoutes: RouteRecordRaw[] = [
       path: item.name,
       component: item.comp
     }
-  })
+  }),
+  {
+    name: '404',
+    path: '/:pathMatch(.*)*',
+    component: () => import('@/views/404.vue'),
+    meta: {
+      breadName: '404找不到页面',
+      title: '404找不到页面'
+    }
+  }
 ]
 
 const mainRoutes: RouteRecordRaw[] = [

@@ -13,7 +13,11 @@
     </el-container>
   </el-container>
 </template>
-
+<script lang='ts'>
+export default {
+  name: 'CustomContainer'
+}
+</script>
 <script lang='ts' setup>
 import NavHeader from './navHeader/index.vue'
 import NavSide from './navSide/index.vue'
@@ -28,8 +32,8 @@ const isCollapse = ref<boolean>(false)
   :deep(.el-header) {
     padding: 0;
   }
-  :deep(.el-main) {
-    padding: 0;
-  }
+  // :deep(.el-main) {
+  //   padding: 0;
+  // }
 }
 </style>

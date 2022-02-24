@@ -1,5 +1,5 @@
 import {App} from "vue"
-import LocationSelector from './src/index.vue'
+import LocationSelector from './LocationSelector.vue'
 
 
 export default {

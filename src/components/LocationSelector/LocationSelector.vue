@@ -27,10 +27,9 @@
     </div>
   </div>
 </template>
-
 <script lang='ts' setup>
-import { ref, watch, defineEmits } from 'vue'
-import pca from '../lib/pcas-code.json'
+import { ref, watch } from 'vue'
+import pca from './lib/pcas-code.json'
 
 interface areaItem {
   name: string,
